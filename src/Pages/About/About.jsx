@@ -1,6 +1,6 @@
 
 import React from 'react';
-import aboutImg from '../Photo/IMG-20250823-WA0023.jpg';
+// import aboutImg from '../Photo/IMG-20250823-WA0023.jpg';
 
 const About = () => {
   return (
