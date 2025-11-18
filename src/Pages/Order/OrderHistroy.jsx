@@ -6,11 +6,12 @@ const OrderHistory = () => {
       <nav className="navbar">
         <div className="logo">Lunele Bakes</div>
         <ul className="nav-links">
-          <li><a href="/">Home</a></li>
-          <li><a href="/profile">Profile</a></li>
-          <li><a href="/order-history">Order History</a></li>
-          <li><a href="/help">Help</a></li>
-          <li><a href="/card-details">Card Details</a></li>
+           <li><a href ="/">Home</a></li>
+           <li><a href="/product">Product</a></li>  
+           <li><a href="/profile">Profile</a></li> 
+           <li><a href="/order-history">Order History</a></li> 
+           <li><a href="/card-history">Card History</a></li> 
+           <li><a href="/help">Help</a></li>
         </ul>
         <div className="auth-buttons">
           <button className="btn btn-outline">Sign Out</button>

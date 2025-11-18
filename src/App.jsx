@@ -1,9 +1,10 @@
-// App.js
+// App.jsx
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { ThemeProvider } from './Pages/Context/ThemeContext'; // Updated import path
-import ThemeToggle from './Pages/Context/ThemeToggle'; // Updated import path
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { ThemeProvider } from './Pages/Context/ThemeContext';
+import ThemeToggle from './Pages/Context/ThemeToggle';
+import Navbar from './Componets/Navbar/Navbar';
 import Home from './Pages/Home/Home';
 import About from './Pages/About/About';
 import OurStory from './Pages/OurStory/OurStory';
@@ -15,12 +16,17 @@ import Profile from './Pages/Profile/Profile';
 import OrderHistory from './Pages/Order/OrderHistory';
 import Help from './Pages/Help/Help';
 import CardDetails from './Pages/Card/CardDetails';
+import CardHistory from './Pages/Card/CardHistory';
 
 function App() {
+  const isLoggedIn = !!localStorage.getItem('authToken');
+
   return (
     <ThemeProvider>
-      <Router>
+      <BrowserRouter>
+
         <ThemeToggle />
+
         <Routes>
           <Route path="/about" element={<About />} />
           <Route path="/our-story" element={<OurStory />} />
@@ -33,8 +39,9 @@ function App() {
           <Route path="/order-history" element={<OrderHistory />} />
           <Route path="/help" element={<Help />} />
           <Route path="/card-details" element={<CardDetails />} />
+          <Route path="/card-history" element={<CardHistory />} />
         </Routes>
-      </Router>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }

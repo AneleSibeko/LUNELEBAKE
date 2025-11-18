@@ -1,0 +1,221 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 4,
+    "passes": 3,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-10-19T17:32:09.903Z",
+    "end": "2025-10-19T17:32:13.808Z",
+    "duration": 3905,
+    "testsRegistered": 4,
+    "passPercent": 75,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cd86e3c4-41fe-4c12-8091-dfe7893fb6e3",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5aa7d5ec-ffd6-47f7-8a7b-51825942349e",
+          "title": "GET 401 Unauthorized Test (Local)",
+          "fullFile": "C:\\Users\\ANELE SIBEKO\\Desktop\\www.lunelebakes.com\\lunelebakes\\test\\get_401_request.js",
+          "file": "\\test\\get_401_request.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should return 401 for unauthorized GET request",
+              "fullTitle": "GET 401 Unauthorized Test (Local) should return 401 for unauthorized GET request",
+              "timedOut": false,
+              "duration": 120,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n  await axios.get(\"http://localhost:5001/unauthorized\");\n  throw new Error(\"Expected request to fail with 401, but it succeeded.\");\n} catch (error) {\n  if (error.response) {\n    expect(error.response.status).to.equal(401);\n  } else {\n    console.error(\"No response received:\", error.message);\n    expect.fail(\"No HTTP response was received.\");\n  }\n}",
+              "err": {},
+              "uuid": "a19993fc-8d06-47b9-81e3-b7f481c8fe05",
+              "parentUUID": "5aa7d5ec-ffd6-47f7-8a7b-51825942349e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a19993fc-8d06-47b9-81e3-b7f481c8fe05"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 120,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        },
+        {
+          "uuid": "2a353472-bf97-4d86-aeb8-c3a4a58d55c2",
+          "title": "GET API Request Test",
+          "fullFile": "C:\\Users\\ANELE SIBEKO\\Desktop\\www.lunelebakes.com\\lunelebakes\\test\\get_request.js",
+          "file": "\\test\\get_request.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should be able to get user list",
+              "fullTitle": "GET API Request Test should be able to get user list",
+              "timedOut": false,
+              "duration": 3315,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const res = await axios.get('https://regres.in/api/users?page=2');\nexpect(res.status).to.equal(200);\nexpect(res.data).to.have.property(\"data\").that.is.an(\"array\");",
+              "err": {
+                "message": "AssertionError: expected '<!DOCTYPE html>\\n<html lang=\"en-US\">\\…' to have property 'data'",
+                "estack": "AssertionError: expected '<!DOCTYPE html>\\n<html lang=\"en-US\">\\…' to have property 'data'\n    at Context.<anonymous> (test\\get_request.js:8:30)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)",
+                "diff": null
+              },
+              "uuid": "cd9f5e99-c981-43bd-a21a-37a5292ab673",
+              "parentUUID": "2a353472-bf97-4d86-aeb8-c3a4a58d55c2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "cd9f5e99-c981-43bd-a21a-37a5292ab673"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 3315,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        },
+        {
+          "uuid": "691667ce-e090-41ff-b398-6b1db71a44e1",
+          "title": "POST 401 Unauthorized Test (Local)",
+          "fullFile": "C:\\Users\\ANELE SIBEKO\\Desktop\\www.lunelebakes.com\\lunelebakes\\test\\post_401_request.js",
+          "file": "\\test\\post_401_request.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should return 401 for unauthorized POST request",
+              "fullTitle": "POST 401 Unauthorized Test (Local) should return 401 for unauthorized POST request",
+              "timedOut": false,
+              "duration": 13,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n  await axios.post(\"http://localhost:5001/unauthorized\", { name: \"Anele\" });\n  throw new Error(\"Expected request to fail with 401, but it succeeded.\");\n} catch (error) {\n  if (error.response) {\n    expect(error.response.status).to.equal(401);\n  } else {\n    console.error(\"No response received:\", error.message);\n    expect.fail(\"No HTTP response was received.\");\n  }\n}",
+              "err": {},
+              "uuid": "0e3ca33d-98fb-4258-b5fa-f6fbcbde9f73",
+              "parentUUID": "691667ce-e090-41ff-b398-6b1db71a44e1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0e3ca33d-98fb-4258-b5fa-f6fbcbde9f73"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        },
+        {
+          "uuid": "d58ed201-eb49-43f1-abd5-f9fda4722fc4",
+          "title": "POST API Request Test",
+          "fullFile": "C:\\Users\\ANELE SIBEKO\\Desktop\\www.lunelebakes.com\\lunelebakes\\test\\post_request.js",
+          "file": "\\test\\post_request.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should be able to post user details",
+              "fullTitle": "POST API Request Test should be able to post user details",
+              "timedOut": false,
+              "duration": 326,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const res = await axios.post('https://regres.in/api/users',\n{\n    \"name\" : \"morpheus\", \n    \"job\" : \"leader\"\n});\nconsole.log(res.data);",
+              "err": {},
+              "uuid": "4e9f9cab-aeee-4a09-9e72-47ab9d9023bd",
+              "parentUUID": "d58ed201-eb49-43f1-abd5-f9fda4722fc4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4e9f9cab-aeee-4a09-9e72-47ab9d9023bd"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 326,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 10000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "11.7.4"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.3.0"
+    }
+  }
+}

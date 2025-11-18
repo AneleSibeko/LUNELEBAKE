@@ -1,5 +1,4 @@
 import React from 'react';
-// import ourstoryImg from '../Photo/IMG-20250823-WA0002.jpg';
 
 const OurStory = () => {
   return (
@@ -7,11 +6,11 @@ const OurStory = () => {
       <nav className="navbar">
         <div className="logo">Lunele Bakes</div>
         <ul className="nav-links">
-          <li><a href="/">Home</a></li>
           <li><a href="/about">About Us</a></li>
           <li><a href="/our-story">Our Story</a></li>
-          <li><a href="/product">Product</a></li>
           <li><a href="/contact-us">Contact Us</a></li>
+          <li><a href="/sign-in">Sign-in</a></li> 
+          <li><a href="/sign-up">Sign-up</a></li>
         </ul>
         <div className="auth-buttons">
           <button className="btn btn-outline"><a href="/sign-in">Sign In</a></button>
@@ -20,7 +19,6 @@ const OurStory = () => {
       </nav>
 
       <section className="about">
-         <img src={ourstoryImg} alt="Two Girls" style={{ width: '65%', height: '65%' }} />
         <h2>Our Story – Lunele Bakes</h2>
         
         <div className="about-content" style={{maxWidth: '800px', margin: '0 auto', textAlign: 'left'}}>

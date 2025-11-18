@@ -35,11 +35,11 @@ const Signup = () => {
       <nav className="navbar">
         <div className="logo">Lunele Bakes</div>
         <ul className="nav-links">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About Us</a></li>
-          <li><a href="/our-story">Our Story</a></li>
-          <li><a href="/product">Product</a></li>
-          <li><a href="/contact-us">Contact Us</a></li>
+          <li><a href="/about">About Us</a></li> 
+          <li><a href="/our-story">Our Story</a></li> 
+          <li><a href="/contact-us">Contact Us</a></li> 
+          <li><a href="/sign-in">Sign-in</a></li> 
+          <li><a href="/sign-up">Sign-up</a></li>
         </ul>
       </nav>
 

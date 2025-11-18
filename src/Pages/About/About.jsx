@@ -1,6 +1,5 @@
 
 import React from 'react';
-// import aboutImg from '../Photo/IMG-20250823-WA0023.jpg';
 
 const About = () => {
   return (
@@ -8,11 +7,11 @@ const About = () => {
       <nav className="navbar">
         <div className="logo">Lunele Bakes</div>
         <ul className="nav-links">
-          <li><a href="/">Home</a></li>
           <li><a href="/about">About Us</a></li>
           <li><a href="/our-story">Our Story</a></li>
-          <li><a href="/product">Product</a></li>
           <li><a href="/contact-us">Contact Us</a></li>
+          <li><a href="/sign-in">Sign-in</a></li> 
+          <li><a href="/sign-up">Sign-up</a></li>
         </ul>
         <div className="auth-buttons">
           <button className="btn btn-outline"><a href="/sign-in">Sign In</a></button>
@@ -21,7 +20,7 @@ const About = () => {
       </nav>
 
       <section className="about">
-        <img src={aboutImg} alt="Two Girls" style={{ width: '65%', height: '65%' }} />
+
         <h2>About Us - Lunele Bakes</h2>
         <p>A Taste of Home in Every Bite</p>
         

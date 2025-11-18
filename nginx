@@ -1,0 +1,17 @@
+worker_processes  1;
+
+events { worker_connections 1024; }
+
+http {
+    server {
+        listen 8080;  # you can use 80 if you have permissions, otherwise 8080
+        server_name localhost;
+
+        root /home/ubuntu/www/lunelebakes;  # change YOUR_USERNAME
+        index index.html;
+
+        location / {
+            try_files $uri /index.html;
+        }
+    }
+}

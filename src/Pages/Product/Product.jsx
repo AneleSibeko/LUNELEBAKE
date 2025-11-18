@@ -34,10 +34,11 @@ const Product = () => {
         <div className="logo">Lunele Bakes</div>
         <ul className="nav-links">
           <li><a href="/">Home</a></li>
-          <li><a href="/about">About Us</a></li>
-          <li><a href="/our-story">Our Story</a></li>
-          <li><a href="/product">Product</a></li>
-          <li><a href="/contact-us">Contact Us</a></li>
+          <li><a href="/product">Product</a></li>  
+          <li><a href="/profile">Profile</a></li> 
+          <li><a href="/order-history">Order History</a></li> 
+          <li><a href="/card-history">Card History</a></li> 
+          <li><a href="/help">Help</a></li>
         </ul>
         <div className="auth-buttons">
           <button className="btn btn-outline"><a href="/sign-in">Sign In</a></button>
@@ -154,4 +155,4 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default Product;

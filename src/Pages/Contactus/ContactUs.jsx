@@ -1,5 +1,4 @@
 import React from 'react';
-// import contactImg from '../Photo/IMG-20250823-WA0004.jpg'
 
 const ContactUs = () => {
   return (
@@ -30,7 +29,6 @@ const ContactUs = () => {
           </div>
           
           <div className="contact-card">
-            <img src={contactImg} alt="Two Girls" style={{ width: '45%', height: '45%' }} />
             <h3>ANELE SIBEKO</h3>
             <p>+27 77 345 234</p>
             <p>anelesibeko@gmail.com</p>
@@ -59,7 +57,11 @@ const ContactUs = () => {
             <label>Message</label>
             <textarea rows="5" placeholder="Your message" style={{width: '100%', padding: '0.8rem', border: '1px solid #ddd', borderRadius: '4px', fontSize: '1rem'}}></textarea>
           </div>
-          <button className="btn btn-primary" style={{width: '100%'}}>Send Message</button>
+          <button type="submit"
+            className="btn btn-primary"
+            style={{ width: "100%", marginBottom: "1rem" }}>
+            Send Message
+            </button>
         </div>
       </section>
 
