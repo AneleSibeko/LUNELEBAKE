@@ -25,7 +25,7 @@ const Home = () => {
       </section>
 
       {/* Featured Products */}
-      <section className="featured-products">
+      <section className="featured-products"> 
         <h2>Some of Our Favorites</h2>
         <p>Just a glimpse of what is waiting for you</p>
         <div className="product-preview">
