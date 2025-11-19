@@ -23,7 +23,7 @@ const OrderHistory = () => {
         
         <div className="order-card">
           <h3>Order #001</h3>
-          <p><strong>Date:</strong> October 15, 2023</p>
+          <p><strong>Date:</strong> November 19, 2025</p>
           <p><strong>Items:</strong> 2 x Plain Scones, 1 x Raisin Scones</p>
           <p><strong>Total:</strong> R50</p>
           <p><strong>Status:</strong> Delivered</p>
@@ -31,7 +31,7 @@ const OrderHistory = () => {
         
         <div className="order-card">
           <h3>Order #002</h3>
-          <p><strong>Date:</strong> October 20, 2023</p>
+          <p><strong>Date:</strong> November 19, 2025</p>
           <p><strong>Items:</strong> 1 x Milk Tart, 1 x Plain Scones</p>
           <p><strong>Total:</strong> R20</p>
           <p><strong>Status:</strong> In Progress</p>

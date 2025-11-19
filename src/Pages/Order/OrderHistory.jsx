@@ -45,7 +45,7 @@ const OrderHistory = () => {
     const orders = [
         {
             id: '001',
-            date: 'October 15, 2023',
+            date: 'November 19, 2025',
             items: '2 x Plain Scones, 1 x Raisin Scones',
             total: 'R50',
             status: 'Delivered',
@@ -53,7 +53,7 @@ const OrderHistory = () => {
         },
         {
             id: '002',
-            date: 'October 20, 2023',
+            date: 'November 19, 2025',
             items: '1 x Milk Tart, 1 x Plain Scones',
             total: 'R20',
             status: 'In Progress',
@@ -61,7 +61,7 @@ const OrderHistory = () => {
         },
         {
             id: '003',
-            date: 'October 25, 2023',
+            date: 'November 19, 2025',
             items: '1 x Birthday Cake',
             total: 'R400',
             status: 'Pending',

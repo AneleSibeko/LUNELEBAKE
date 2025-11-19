@@ -26,7 +26,8 @@ const Signup = () => {
     // 👉 Send data to backend to create user and trigger welcome email
     (async () => {
       try {
-        const resp = await fetch('http://localhost:5000/api/signup', {
+        const URL = "34.237.14.10"
+        const resp = await fetch(`http://${URL}:5000/api/signup`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ username: form.username, email: form.email })
