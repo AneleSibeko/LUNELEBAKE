@@ -20,7 +20,7 @@ jobs:
         with:
           args: --delete
         env:
-          AWS_S3_BUCKET: www.lunelebakes.com     # Replace with your bucket name
+          AWS_S3_BUCKET: lunelebakes-assets-2025     # Replace with your bucket name
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ANELESIBEKO_ACCESSID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_ANELESIBEKO_SECRET }}
           AWS_REGION: us-east-1              # Replace with your AWS region
