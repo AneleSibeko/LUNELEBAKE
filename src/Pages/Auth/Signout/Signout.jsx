@@ -1,15 +1,16 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const SignOut = () => {
+const Signout = () => {
+  const navigate = useNavigate();
   const handleSignOut = () => {
     const confirmed = window.confirm("Are you sure you want to sign out?");
     if (confirmed) {
       // Clear user data
       localStorage.removeItem('authToken');
       localStorage.removeItem('userData');
-
-      // Redirect to SignIn page
-      window.location.href = '/signin';
+      // Redirect to SignIn page (use correct route)
+      navigate('/sign-in');
     }
   };
 
@@ -24,4 +25,4 @@ const SignOut = () => {
   );
 };
 
-export default SignOut;
+export default Signout;

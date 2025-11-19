@@ -23,18 +23,21 @@ const ContactUs = () => {
         
         <div className="contact-cards">
           <div className="contact-card">
+            <img src=".\Photo\IMG-20250823-WA0002.jpg" alt="Milk Tart" style={{width: '100%', height: '150px', objectFit: 'cover', borderRadius: '5px'}} /> 
             <h3>LUYANDA NTOMBELA</h3>
             <p>+27 87 342 4567</p>
             <p>luyandantombela@gmail.com</p>
           </div>
           
           <div className="contact-card">
+             <img src=".\Photo\IMG-20250823-WA0004.jpg" alt="Milk Tart" style={{width: '100%', height: '150px', objectFit: 'cover', borderRadius: '5px'}} /> 
             <h3>ANELE SIBEKO</h3>
             <p>+27 77 345 234</p>
             <p>anelesibeko@gmail.com</p>
           </div>
           
           <div className="contact-card">
+           <img src=".\Photo\WhatsApp Image 2025-11-15 at 12.09.49_7d9cc23f.jpg" alt="Milk Tart" style={{width: '100%', height: '150px', objectFit: 'cover', borderRadius: '5px'}} /> 
             <h3>LUNELE BAKES</h3>
             <p>+27 84 561 6090</p>
             <p>luneleBakes@gmail.com</p>

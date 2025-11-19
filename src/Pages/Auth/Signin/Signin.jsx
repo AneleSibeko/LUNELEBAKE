@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 const Signin = ({ setIsAuthenticated }) => {
   const [form, setForm] = useState({
@@ -19,11 +19,20 @@ const Signin = ({ setIsAuthenticated }) => {
     // 👉 Normally you'd check credentials with backend
     console.log("User signed in:", form);
 
-    // ✅ Mark user as authenticated
-    setIsAuthenticated(true);
+    // ✅ Persist a simple auth token locally (replace with real auth flow)
+    try {
+      localStorage.setItem('authToken', 'demo-token');
+    } catch (err) {
+      console.warn('Could not write authToken to localStorage', err);
+    }
+
+    // If a parent passed a setter, call it (guarded)
+    if (typeof setIsAuthenticated === 'function') {
+      try { setIsAuthenticated(true); } catch (err) { console.warn(err); }
+    }
 
     // ✅ Redirect to Home page
-    navigate("/");
+    navigate('/');
   };
 
   return (
@@ -67,7 +76,7 @@ const Signin = ({ setIsAuthenticated }) => {
         </form>
 
         <p style={{ textAlign: "center" }}>
-          New User? <a href="/sign-up">SIGN UP</a>
+          New User? <Link to="/sign-up">SIGN UP</Link>
         </p>
       </div>
 

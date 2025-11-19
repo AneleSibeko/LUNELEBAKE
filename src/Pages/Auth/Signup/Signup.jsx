@@ -23,11 +23,29 @@ const Signup = () => {
       return;
     }
 
-    // 👉 Here you would normally send data to backend (API call)
-    console.log("User signed up:", form);
+    // 👉 Send data to backend to create user and trigger welcome email
+    (async () => {
+      try {
+        const resp = await fetch('http://localhost:5000/api/signup', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ username: form.username, email: form.email })
+        });
 
-    // ✅ After signup, send user to Sign In page
-    navigate("/sign-in");
+        if (!resp.ok) {
+          const err = await resp.json().catch(() => ({}));
+          alert('Signup failed: ' + (err.error || resp.statusText));
+          return;
+        }
+
+        // Optionally inform the user
+        alert('Signup successful — a welcome email has been sent to ' + form.email + ' (if configured).');
+        navigate('/sign-in');
+      } catch (err) {
+        console.error('Signup request failed', err);
+        alert('Signup failed (network or server error).');
+      }
+    })();
   };
 
   return (

@@ -18,6 +18,7 @@ const Home = () => {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-overlay">
+          <img src=".\Photo\IMG-20250823-WA0003.jpg" alt="home" style={{width: '50%', height: '98%', objectFit: 'cover', borderRadius: '5px'}} />
           <h1>Delight in Every Bite</h1>
           <p>Discover freshly baked treats that bring a smile to your day</p>
         </div>

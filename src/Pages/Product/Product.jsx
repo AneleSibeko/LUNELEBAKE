@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import milkTart from "../../../public/Photo/5c0b28f9-a1d2-466c-8425-3166e3f30ddc.jpeg"
 
 const Product = () => {
   const [quantities, setQuantities] = useState({
@@ -53,6 +54,7 @@ const Product = () => {
           {/* Existing products */}
           <div className="product-card">
             <div className="product-info">
+               <img src=".\Photo\d921262b-4e5f-4d20-9ddf-45990a3c6987.jpeg" alt="Milk Tart" style={{width: '100%', height: '150px', objectFit: 'cover', borderRadius: '5px'}} />
               <h3>Plain Scones</h3>
               <p>Classic, buttery scones perfect with jam or cream</p>
               <p className="product-price">R15 (pack of 4)</p>
@@ -66,6 +68,7 @@ const Product = () => {
 
           <div className="product-card">
             <div className="product-info">
+              <img src=".\Photo\406c5597-7758-42e6-afec-18ec338cfa98.jpeg" alt="Milk Tart" style={{width: '100%', height: '150px', objectFit: 'cover', borderRadius: '5px'}} />
               <h3>Raisin Scones</h3>
               <p>Sweet scones with plump, juicy raisins</p>
               <p className="product-price">R20 (pack of 4)</p>
@@ -79,7 +82,8 @@ const Product = () => {
 
           <div className="product-card">
             <div className="product-info">
-              <h3>Milk Tart</h3>
+              <img src=".\Photo\7ecd7fb4-7ca5-443d-8a49-cd7decd1f011.jpeg" alt="Milk Tart" style={{width: '100%', height: '150px', objectFit: 'cover', borderRadius: '5px'}} />
+              <h3>Milks Tart</h3>
               <p>Traditional South African milk tart with cinnamon</p>
               <p className="product-price">R5 per slice</p>
               <div style={{display: 'flex', alignItems: 'center', marginTop: '1rem'}}>
@@ -93,6 +97,7 @@ const Product = () => {
           {/* New products */}
           <div className="product-card">
             <div className="product-info">
+               <img src=".\Photo\9199c4d1-4d48-4844-ae87-3b13c7572b33.jpeg" alt="Milk Tart" style={{width: '100%', height: '150px', objectFit: 'cover', borderRadius: '5px'}} />
               <h3>Cupcakes</h3>
               <p>Delicious cupcakes for any occasion</p>
               <p className="product-price">R15 each</p>
@@ -106,6 +111,7 @@ const Product = () => {
 
           <div className="product-card">
             <div className="product-info">
+              <img src=".\Photo\Discover the best brownie recipe that guarantees….jpeg" alt="Milk Tart" style={{width: '100%', height: '150px', objectFit: 'cover', borderRadius: '5px'}} />
               <h3>Classic Brownies</h3>
               <p>Rich chocolate brownies (3 pieces per order)</p>
               <p className="product-price">R20</p>
@@ -119,6 +125,7 @@ const Product = () => {
 
           <div className="product-card">
             <div className="product-info">
+              <img src=".\Photo\ea71c703-a6e7-4c67-af6e-d8ee637a85f9.jpeg" alt="Milk Tart" style={{width: '100%', height: '150px', objectFit: 'cover', borderRadius: '5px'}} />
               <h3>Donuts</h3>
               <p>Six delicious donuts per order</p>
               <p className="product-price">R50</p>
