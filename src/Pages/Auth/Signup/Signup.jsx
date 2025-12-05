@@ -26,8 +26,12 @@ const Signup = () => {
     // 👉 Send data to backend to create user and trigger welcome email
     (async () => {
       try {
-        const URL = "34.237.14.10"
-        const resp = await fetch(`http://34.237.14.10:5000/api/signup`, {
+        // Prefer Vite env `VITE_API_URL` if set, otherwise default to localhost:5000
+        const apiBase = (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.VITE_API_URL)
+          ? import.meta.env.VITE_API_URL.replace(/\/$/, '')
+          : (window.__API_URL__ || 'http://localhost:5000');
+
+        const resp = await fetch(`${apiBase}/api/signup`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ username: form.username, email: form.email })
@@ -44,7 +48,7 @@ const Signup = () => {
         navigate('/sign-in');
       } catch (err) {
         console.error('Signup request failed', err);
-        alert('Signup failed (network or server error).');
+        alert('Signup failed (network or server error): ' + (err.message || err));
       }
     })();
   };
