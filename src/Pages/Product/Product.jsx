@@ -50,6 +50,7 @@ const Product = () => {
       <section className="products">
         <h2>Our Products</h2>
         
+        
         <div className="product-grid">
           {/* Existing products */}
           <div className="product-card">
@@ -164,6 +165,342 @@ const Product = () => {
               </div>
             </div>
           </div>
+
+          <div className="product-card">
+  <div className="product-info">
+    <img src=".\Photo\blueberry.webp" alt="Product" style={{width:'100%', height:'150px', objectFit:'cover', borderRadius:'5px'}} />
+    <h3>Blueberry Muffins</h3>
+    <p>Fresh muffins packed with blueberries</p>
+    <p className="product-price">R25</p>
+     <div style={{display: 'flex', alignItems: 'center', marginTop: '1rem'}}>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts - 1)} style={{padding: '0.3rem 0.8rem', marginRight: '0.5rem'}}>-</button>
+                <span>{quantities.donuts}</span>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts + 1)} style={{padding: '0.3rem 0.8rem', marginLeft: '0.5rem'}}>+</button>
+              </div>
+  </div>
+</div>
+
+<div className="product-card">
+  <div className="product-info">
+    <img src=".\Photo\chocolate muffins.webp" alt="Product" style={{width:'100%', height:'150px', objectFit:'cover', borderRadius:'5px'}} />
+    <h3>Chocolate Muffins</h3>
+    <p>Rich chocolate flavor</p>
+    <p className="product-price">R25</p>
+     <div style={{display: 'flex', alignItems: 'center', marginTop: '1rem'}}>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts - 1)} style={{padding: '0.3rem 0.8rem', marginRight: '0.5rem'}}>-</button>
+                <span>{quantities.donuts}</span>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts + 1)} style={{padding: '0.3rem 0.8rem', marginLeft: '0.5rem'}}>+</button>
+              </div>
+  </div>
+</div>
+
+<div className="product-card">
+  <div className="product-info">
+    <img src=".\Photo\banana bread.webp" alt="Product" style={{width:'100%', height:'150px', objectFit:'cover', borderRadius:'5px'}} />
+    <h3>Banana Bread</h3>
+    <p>Moist homemade banana bread</p>
+    <p className="product-price">R40</p>
+    <div style={{display: 'flex', alignItems: 'center', marginTop: '1rem'}}>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts - 1)} style={{padding: '0.3rem 0.8rem', marginRight: '0.5rem'}}>-</button>
+                <span>{quantities.donuts}</span>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts + 1)} style={{padding: '0.3rem 0.8rem', marginLeft: '0.5rem'}}>+</button>
+              </div>
+  </div>
+</div>
+
+<div className="product-card">
+  <div className="product-info">
+    <img src=".\Photo\chocolate cupcake.webp" alt="Product" style={{width:'100%', height:'150px', objectFit:'cover', borderRadius:'5px'}} />
+    <h3>Chocolate Cake Slice</h3>
+    <p>Soft chocolate slice</p>
+    <p className="product-price">R30</p>
+    <div style={{display: 'flex', alignItems: 'center', marginTop: '1rem'}}>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts - 1)} style={{padding: '0.3rem 0.8rem', marginRight: '0.5rem'}}>-</button>
+                <span>{quantities.donuts}</span>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts + 1)} style={{padding: '0.3rem 0.8rem', marginLeft: '0.5rem'}}>+</button>
+              </div>
+  </div>
+</div>
+
+<div className="product-card">
+  <div className="product-info">
+    <img src=".\Photo\red veverlt.webp" alt="Product" style={{width:'100%', height:'150px', objectFit:'cover', borderRadius:'5px'}} />
+    <h3>Red Velvet Cake Slice</h3>
+    <p>Classic red velvet</p>
+    <p className="product-price">R35</p>
+    <div style={{display: 'flex', alignItems: 'center', marginTop: '1rem'}}>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts - 1)} style={{padding: '0.3rem 0.8rem', marginRight: '0.5rem'}}>-</button>
+                <span>{quantities.donuts}</span>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts + 1)} style={{padding: '0.3rem 0.8rem', marginLeft: '0.5rem'}}>+</button>
+              </div>
+  </div>
+</div>
+
+<div className="product-card">
+  <div className="product-info">
+    <img src=".\Photo\carrot cake.webp" alt="Product" style={{width:'100%', height:'150px', objectFit:'cover', borderRadius:'5px'}} />
+    <h3>Carrot Cake Slice</h3>
+    <p>Freshly baked carrot cake</p>
+    <p className="product-price">R30</p>
+    <div style={{display: 'flex', alignItems: 'center', marginTop: '1rem'}}>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts - 1)} style={{padding: '0.3rem 0.8rem', marginRight: '0.5rem'}}>-</button>
+                <span>{quantities.donuts}</span>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts + 1)} style={{padding: '0.3rem 0.8rem', marginLeft: '0.5rem'}}>+</button>
+              </div>
+  </div>
+</div>
+
+<div className="product-card">
+  <div className="product-info">
+    <img src=".\Photo\cokkies.webp" alt="Product" style={{width:'100%', height:'150px', objectFit:'cover', borderRadius:'5px'}} />
+    <h3>Chocolate Chip Cookies</h3>
+    <p>6 per pack</p>
+    <p className="product-price">R25</p>
+   <div style={{display: 'flex', alignItems: 'center', marginTop: '1rem'}}>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts - 1)} style={{padding: '0.3rem 0.8rem', marginRight: '0.5rem'}}>-</button>
+                <span>{quantities.donuts}</span>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts + 1)} style={{padding: '0.3rem 0.8rem', marginLeft: '0.5rem'}}>+</button>
+              </div>
+  </div>
+</div>
+
+<div className="product-card">
+  <div className="product-info">
+    <img src=".\Photo\oatmeal.webp" alt="Product" style={{width:'100%', height:'150px', objectFit:'cover', borderRadius:'5px'}} />
+    <h3>Oatmeal Cookies</h3>
+    <p>Healthy and soft</p>
+    <p className="product-price">R22</p>
+    <div style={{display: 'flex', alignItems: 'center', marginTop: '1rem'}}>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts - 1)} style={{padding: '0.3rem 0.8rem', marginRight: '0.5rem'}}>-</button>
+                <span>{quantities.donuts}</span>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts + 1)} style={{padding: '0.3rem 0.8rem', marginLeft: '0.5rem'}}>+</button>
+              </div>
+  </div>
+</div>
+
+<div className="product-card">
+  <div className="product-info">
+    <img src=".\Photo\jam t.webp" alt="Product" style={{width:'100%', height:'150px', objectFit:'cover', borderRadius:'5px'}} />
+    <h3>Jam Tartlets</h3>
+    <p>Mini tartlets filled with jam</p>
+    <p className="product-price">R30</p>
+    <div style={{display: 'flex', alignItems: 'center', marginTop: '1rem'}}>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts - 1)} style={{padding: '0.3rem 0.8rem', marginRight: '0.5rem'}}>-</button>
+                <span>{quantities.donuts}</span>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts + 1)} style={{padding: '0.3rem 0.8rem', marginLeft: '0.5rem'}}>+</button>
+              </div>
+  </div>
+</div>
+
+<div className="product-card">
+  <div className="product-info">
+    <img src=".\Photo\rolls.webp" alt="Product" style={{width:'100%', height:'150px', objectFit:'cover', borderRadius:'5px'}} />
+    <h3>Cinnamon Rolls</h3>
+    <p>Fresh cinnamon rolls</p>
+    <p className="product-price">R28</p>
+    <div style={{display: 'flex', alignItems: 'center', marginTop: '1rem'}}>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts - 1)} style={{padding: '0.3rem 0.8rem', marginRight: '0.5rem'}}>-</button>
+                <span>{quantities.donuts}</span>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts + 1)} style={{padding: '0.3rem 0.8rem', marginLeft: '0.5rem'}}>+</button>
+              </div>
+  </div>
+</div>
+
+<div className="product-card">
+  <div className="product-info">
+    <img src=".\Photo\cheesecake.webp" alt="Product" style={{width:'100%', height:'150px', objectFit:'cover', borderRadius:'5px'}} />
+    <h3>Mini Cheesecakes</h3>
+    <p>Per piece</p>
+    <p className="product-price">R20</p>
+    <div style={{display: 'flex', alignItems: 'center', marginTop: '1rem'}}>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts - 1)} style={{padding: '0.3rem 0.8rem', marginRight: '0.5rem'}}>-</button>
+                <span>{quantities.donuts}</span>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts + 1)} style={{padding: '0.3rem 0.8rem', marginLeft: '0.5rem'}}>+</button>
+              </div>
+  </div>
+</div>
+
+<div className="product-card">
+  <div className="product-info">
+    <img src=".\Photo\apple pie.webp" alt="Product" style={{width:'100%', height:'150px', objectFit:'cover', borderRadius:'5px'}} />
+    <h3>Apple Pie Slice</h3>
+    <p>Warm homemade pie</p>
+    <p className="product-price">R25</p>
+    <div style={{display: 'flex', alignItems: 'center', marginTop: '1rem'}}>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts - 1)} style={{padding: '0.3rem 0.8rem', marginRight: '0.5rem'}}>-</button>
+                <span>{quantities.donuts}</span>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts + 1)} style={{padding: '0.3rem 0.8rem', marginLeft: '0.5rem'}}>+</button>
+              </div>
+  </div>
+</div>
+
+<div className="product-card">
+  <div className="product-info">
+    <img src=".\Photo\peppermint.webp" alt="Product" style={{width:'100%', height:'150px', objectFit:'cover', borderRadius:'5px'}} />
+    <h3>Peppermint Crisp Tart</h3>
+    <p>Classic South African dessert</p>
+    <p className="product-price">R35</p>
+    <div style={{display: 'flex', alignItems: 'center', marginTop: '1rem'}}>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts - 1)} style={{padding: '0.3rem 0.8rem', marginRight: '0.5rem'}}>-</button>
+                <span>{quantities.donuts}</span>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts + 1)} style={{padding: '0.3rem 0.8rem', marginLeft: '0.5rem'}}>+</button>
+              </div>
+  </div>
+</div>
+
+<div className="product-card">
+  <div className="product-info">
+    <img src=".\Photo\lemon.webp" alt="Product" style={{width:'100%', height:'150px', objectFit:'cover', borderRadius:'5px'}} />
+    <h3>Lemon Loaf</h3>
+    <p>Zesty and fresh</p>
+    <p className="product-price">R40</p>
+    <div style={{display: 'flex', alignItems: 'center', marginTop: '1rem'}}>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts - 1)} style={{padding: '0.3rem 0.8rem', marginRight: '0.5rem'}}>-</button>
+                <span>{quantities.donuts}</span>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts + 1)} style={{padding: '0.3rem 0.8rem', marginLeft: '0.5rem'}}>+</button>
+              </div>
+  </div>
+</div>
+
+<div className="product-card">
+  <div className="product-info">
+    <img src=".\Photo\marbel cake.webp" alt="Product" style={{width:'100%', height:'150px', objectFit:'cover', borderRadius:'5px'}} />
+    <h3>Marble Cake</h3>
+    <p>Swirled chocolate & vanilla</p>
+    <p className="product-price">R45</p>
+    <div style={{display: 'flex', alignItems: 'center', marginTop: '1rem'}}>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts - 1)} style={{padding: '0.3rem 0.8rem', marginRight: '0.5rem'}}>-</button>
+                <span>{quantities.donuts}</span>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts + 1)} style={{padding: '0.3rem 0.8rem', marginLeft: '0.5rem'}}>+</button>
+              </div>
+  </div>
+</div>
+
+<div className="product-card">
+  <div className="product-info">
+    <img src=".\Photo\mini dough bites.webp" alt="Product" style={{width:'100%', height:'150px', objectFit:'cover', borderRadius:'5px'}} />
+    <h3>Mini Dough Bites</h3>
+    <p>Small fried dough bites</p>
+    <p className="product-price">R20</p>
+    <div style={{display: 'flex', alignItems: 'center', marginTop: '1rem'}}>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts - 1)} style={{padding: '0.3rem 0.8rem', marginRight: '0.5rem'}}>-</button>
+                <span>{quantities.donuts}</span>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts + 1)} style={{padding: '0.3rem 0.8rem', marginLeft: '0.5rem'}}>+</button>
+              </div>
+  </div>
+</div>
+
+<div className="product-card">
+  <div className="product-info">
+    <img src=".\Photo\vaniella.webp" alt="Product" style={{width:'100%', height:'150px', objectFit:'cover', borderRadius:'5px'}} />
+    <h3>Vanilla Cupcakes</h3>
+    <p>Soft & fluffy</p>
+    <p className="product-price">R15</p>
+    <div style={{display: 'flex', alignItems: 'center', marginTop: '1rem'}}>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts - 1)} style={{padding: '0.3rem 0.8rem', marginRight: '0.5rem'}}>-</button>
+                <span>{quantities.donuts}</span>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts + 1)} style={{padding: '0.3rem 0.8rem', marginLeft: '0.5rem'}}>+</button>
+              </div>
+  </div>
+</div>
+
+<div className="product-card">
+  <div className="product-info">
+    <img src=".\Photo\chocolate cupcake.webp" alt="Product" style={{width:'100%', height:'150px', objectFit:'cover', borderRadius:'5px'}} />
+    <h3>Chocolate Cupcakes</h3>
+    <p>Rich and moist</p>
+    <p className="product-price">R15</p>
+    <div style={{display: 'flex', alignItems: 'center', marginTop: '1rem'}}>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts - 1)} style={{padding: '0.3rem 0.8rem', marginRight: '0.5rem'}}>-</button>
+                <span>{quantities.donuts}</span>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts + 1)} style={{padding: '0.3rem 0.8rem', marginLeft: '0.5rem'}}>+</button>
+              </div>
+  </div>
+</div>
+
+<div className="product-card">
+  <div className="product-info">
+    <img src=".\Photo\snowball.webp" alt="Product" style={{width:'100%', height:'150px', objectFit:'cover', borderRadius:'5px'}} />
+    <h3>Snowball Treats</h3>
+    <p>Coconut coated</p>
+    <p className="product-price">R18</p>
+    <div style={{display: 'flex', alignItems: 'center', marginTop: '1rem'}}>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts - 1)} style={{padding: '0.3rem 0.8rem', marginRight: '0.5rem'}}>-</button>
+                <span>{quantities.donuts}</span>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts + 1)} style={{padding: '0.3rem 0.8rem', marginLeft: '0.5rem'}}>+</button>
+              </div>
+  </div>
+</div>
+
+<div className="product-card">
+  <div className="product-info">
+    <img src=".\Photo\buttermilk.webp" alt="Product" style={{width:'100%', height:'150px', objectFit:'cover', borderRadius:'5px'}} />
+    <h3>Buttermilk Rusks</h3>
+    <p>Traditional homemade rusks</p>
+    <p className="product-price">R45</p>
+    <div style={{display: 'flex', alignItems: 'center', marginTop: '1rem'}}>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts - 1)} style={{padding: '0.3rem 0.8rem', marginRight: '0.5rem'}}>-</button>
+                <span>{quantities.donuts}</span>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts + 1)} style={{padding: '0.3rem 0.8rem', marginLeft: '0.5rem'}}>+</button>
+              </div>
+  </div>
+</div>
+
+<div className="product-card">
+  <div className="product-info">
+    <img src=".\Photo\Koeksisters.webp" alt="Product" style={{width:'100%', height:'150px', objectFit:'cover', borderRadius:'5px'}} />
+    <h3>Koeksisters</h3>
+    <p>Sweet, sticky treat</p>
+    <p className="product-price">R30</p>
+    <div style={{display: 'flex', alignItems: 'center', marginTop: '1rem'}}>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts - 1)} style={{padding: '0.3rem 0.8rem', marginRight: '0.5rem'}}>-</button>
+                <span>{quantities.donuts}</span>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts + 1)} style={{padding: '0.3rem 0.8rem', marginLeft: '0.5rem'}}>+</button>
+              </div>
+  </div>
+</div>
+
+<div className="product-card">
+  <div className="product-info">
+    <img src=".\Photo\Mini Pancakes.webp" alt="Product" style={{width:'100%', height:'150px', objectFit:'cover', borderRadius:'5px'}} />
+    <h3>Mini Pancakes</h3>
+    <p>Small fluffy pancakes</p>
+    <p className="product-price">R18</p>
+    <div style={{display: 'flex', alignItems: 'center', marginTop: '1rem'}}>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts - 1)} style={{padding: '0.3rem 0.8rem', marginRight: '0.5rem'}}>-</button>
+                <span>{quantities.donuts}</span>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts + 1)} style={{padding: '0.3rem 0.8rem', marginLeft: '0.5rem'}}>+</button>
+              </div>
+  </div>
+</div>
+
+<div className="product-card">
+  <div className="product-info">
+    <img src=".\Photo\Chocolate Tart Slice.webp" alt="Product" style={{width:'100%', height:'150px', objectFit:'cover', borderRadius:'5px'}} />
+    <h3>Chocolate Tart Slice</h3>
+    <p>Rich chocolate tart</p>
+    <p className="product-price">R30</p>
+    <div style={{display: 'flex', alignItems: 'center', marginTop: '1rem'}}>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts - 1)} style={{padding: '0.3rem 0.8rem', marginRight: '0.5rem'}}>-</button>
+                <span>{quantities.donuts}</span>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts + 1)} style={{padding: '0.3rem 0.8rem', marginLeft: '0.5rem'}}>+</button>
+              </div>
+  </div>
+</div>
+
+<div className="product-card">
+  <div className="product-info">
+    <img src=".\Photo\Berry Tart Slice.webp" alt="Product" style={{width:'100%', height:'150px', objectFit:'cover', borderRadius:'5px'}} />
+    <h3>Berry Tart Slice</h3>
+    <p>Fresh berry topping</p>
+    <p className="product-price">R35</p>
+    <div style={{display: 'flex', alignItems: 'center', marginTop: '1rem'}}>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts - 1)} style={{padding: '0.3rem 0.8rem', marginRight: '0.5rem'}}>-</button>
+                <span>{quantities.donuts}</span>
+                <button onClick={() => updateQuantity('donuts', quantities.donuts + 1)} style={{padding: '0.3rem 0.8rem', marginLeft: '0.5rem'}}>+</button>
+              </div>
+  </div>
+</div>
 
           <div className="product-card">
             <div className="product-info">
