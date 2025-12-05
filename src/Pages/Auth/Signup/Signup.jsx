@@ -27,7 +27,7 @@ const Signup = () => {
     (async () => {
       try {
         const URL = "34.237.14.10"
-        const resp = await fetch(`http://${URL}:5000/api/signup`, {
+        const resp = await fetch(`http://34.237.14.10:5000/api/signup`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ username: form.username, email: form.email })
@@ -35,7 +35,7 @@ const Signup = () => {
 
         if (!resp.ok) {
           const err = await resp.json().catch(() => ({}));
-          // alert('Signup failed: ' + (err.error || resp.statusText));
+          alert('Signup failed: ' + (err.error || resp.statusText));
           return;
         }
 
