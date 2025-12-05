@@ -35,7 +35,7 @@ const Signup = () => {
 
         if (!resp.ok) {
           const err = await resp.json().catch(() => ({}));
-          alert('Signup failed: ' + (err.error || resp.statusText));
+          // alert('Signup failed: ' + (err.error || resp.statusText));
           return;
         }
 
